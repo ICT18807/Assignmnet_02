@@ -1,0 +1,13 @@
+# Application Configuration
+spring:
+  cloud:
+    discovery:
+      enabled: true
+      client:
+        simple:
+          service-url:
+            default: http://localhost:8761/eureka
+
+    circuitbreaker:
+      resilience4j:
+        enabled: true
